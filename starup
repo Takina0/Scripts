@@ -348,29 +348,10 @@ https://support.you.163.com/appversync/check.do url reject
 
 # ======= Y ======= #
 
-# > yanaifei
-^https?:\/\/pipi\.4kya\.com\/\/xgapp\.php\/v3\/advert\.position=[^2]+ url reject
 # > YangShiPin
 ^https?:\/\/cdn\.cmgadx\.com\/sdk\/pool\/\w+\.json url reject
 # > YiHaoDian
 ^https?:\/\/venus\.yhd\.com\/memhome\/launchConfig url reject
-# > YiKaoBang
-^https?:\/\/api\.yikaobang\.com\.cn\/client\/main\/homePageSmallAd url reject
-^https?:\/\/api\.yikaobang\.com\.cn\/index\.php\/Client\/main\/startPage url reject
-# > YouLinYouKe
-https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
-# > YinkeZhiBo
-^https?:\/\/service\.busi\.inke\.cn\/api\/flash\/screen url reject
-# > YinxiangNote
-^https?:\/\/app\.yinxiang\.com\/ads\/ url reject
-# > yonghui
-^https?:\/\/api\.yonghuivip\.com\/web\/shensuan\/ad\/getAd url reject
-# > youshu
-^https?:\/\/gongdu\.youshu\.cc\/m\/open_screen\/list_by_udid url reject
-# > yingshiyun
-^https?:\/\/i\.ys7\.com\/api\/ads\/ url reject
-# > yuxueyuan
-^https?:\/\/.*\.yuxueyuan\.cn\/yxy-api-gateway\/api\/json\/advert\/getsAdStartScreen url reject-200
 # > yitao
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.etao\.noah\.query.*etao_splash url reject
 # > yunting
@@ -384,22 +365,11 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 # > zhongguoyidong
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit url reject
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/explorePage\/getAdverList url reject
-# > zhongguoyidongjiangsu
-^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query url reject
-# > zhongguoyidongshandong
-https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do url reject
 # > zhongguoliantong
 ^https?:\/\/m\.client\.10010\.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv) url reject
 ^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd) url reject
-# > zhongguoyidongguangxi
-^https?:\/\/gx\.10086\.cn\/zt-portal\/gxhzg\/portal\/app\/api\/v url reject
-# > zhongguoyidonganhui*
-^https?:\/\/api\.ahmobile\.cn:443\/eip\?eip_serv_id=app\.getAllNew url reject
 # > zhuanzhuan
 ^https?:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo url reject
-# > zhiboba
-^https?:\/\/a\.qiumibao\.com\/activities\/config\.php$ url reject
-^https?:\/\/a\.qiumibao\.com\/ios\/config\/\?version_code= url reject
 # > zuoyebang
 ^https?:\/\/syh\.zybang\.com\/com\/adx\/ url reject
 # > ZuiYou
@@ -407,24 +377,12 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do url rejec
 ^https?:\/\/api\.izuiyou\.com\/ad\/ url reject
 # > Zhihu
 ^https?:\/\/api\.zhihu\.com\/commercial_api.*launch_v2 url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/zhihu_openads.js
-# > zhuishushenqi
-^https?:\/\/adx-cn\.anythinktech\.com\/bid url reject
 # > zhangshangdaojucheng
 ^https?:\/\/djcapp\.game\.qq\.com\/daoju\/igw\/main\/\?_service=welink\.ad\.list url reject
-# > zhangyue
-^https?:\/\/ih2\.ireader\.com\/zyapi\/bookstore\/ad url reject
-^https?:\/\/ih2\.ireader\.com\/zyapi\/self\/screen\/ad url reject
-^https?:\/\/ih2\.ireader\.com\/zycl\/api\/ad url reject
-# > ziru
-^https?:\/\/ztoread\.ziroom\.com\/ymerApi\/v\d\/index\/open url reject
 # > zhongguoyinhang
 #^https?:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/.+.jpg url reject-img
-# > zhuijudaren
-^https?:\/\/zjdr666\.com\/zjdr\.php\/v\d\/(version|top_notice\?|advert\?position=[^2]+) url reject
 # > zhangshangyingxionglianmeng
 ^https?:\/\/mlol\.qt\.qq\.com\/go\/recommend url reject
-# > zhongguoyidongguangdong
-^https?:\/\/gd\.10086\.cn\/gmccapp\/serv\/\?servicename=GMCCAPP_704_002_001_001 url reject
 
 
 
