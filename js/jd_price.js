@@ -1,7 +1,9 @@
-#[Script]
-# http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) script-path = https://raw.githubusercontent.com/zwf234/rules/master/js/jd_price.js, requires-body = true, tag = 京东比价
-
-
+/*
+[Script]
+http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) script-path = https://raw.githubusercontent.com/zwf234/rules/master/js/jd_price.js, requires-body = true, tag = 京东比价
+[MITM]
+hostname = api.m.jd.com
+*/
 
 const path1 = "serverConfig";
 const path2 = "wareBusiness";
