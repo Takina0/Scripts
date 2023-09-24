@@ -1,12 +1,17 @@
 /*
-JD | TB Price comparison
-by Small
-date 2021-06-25
-Thanks @yichahucha
 
 【Loon】
 [Script]
 http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js, requires-body=true, timeout=10, tag=京东比价
+
+[MITM]
+hostname = api.m.jd.com
+*/
+/*
+JD | TB Price comparison
+by Small
+date 2021-06-25
+Thanks @yichahucha
 
 QX:
 ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
@@ -14,8 +19,13 @@ QX:
 ^http://.+/amdc/mobileDispatch url script-request-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
 ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
 
-[MITM]
-hostname = api.m.jd.com, trade-acs.m.taobao.com
+Surge4:
+http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+
+http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+
+Surge & QX MITM = api.m.jd.com, trade-acs.m.taobao.com
 */
 
 const ScriptName = "浜笢|娣樺疂 姣斾环";
