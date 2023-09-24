@@ -1,7 +1,7 @@
 /*
 【Loon】
 [Script]
-http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) script-path=https://github.com/Takina0/Scripts/raw/main/js/jd_price2.js, requires-body=true, timeout=60, tag=京东比价2
+http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) script-path=https://github.com/Takina0/Scripts/raw/main/js/jd_price2.js, requires-body=true, timeout=60, tag=京东比价
 
 [MITM]
 hostname = api.m.jd.com
